@@ -1,4 +1,4 @@
-package	Domain;
+package	domain;
 
 import javax.security.auth.login.LoginContext;
 
