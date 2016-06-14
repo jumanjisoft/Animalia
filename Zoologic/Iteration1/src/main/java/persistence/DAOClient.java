@@ -4,10 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Vector;
 
-import org.Persistance.DBAgent;
 import org.hsqldb.ClientConnection;
 
-import Domain.Client;
+import domain.Client;
 
 public class DAOClient {
 	private DBAgent dbAgent;
