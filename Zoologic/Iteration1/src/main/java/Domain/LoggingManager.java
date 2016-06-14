@@ -11,7 +11,8 @@ public class LoggingManager {
 		this.daoClient = new DAOClient();
 	}
 
-	public boolean login(Client cli) throws Exception {
+	public boolean login(String user, String password) throws Exception {
+		Client cli = new Client(user, password);
 		return this.daoClient.readClient(cli);
 	}
 }

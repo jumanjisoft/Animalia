@@ -23,6 +23,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.event.ChangeListener;
 
 import domain.Client;
+import domain.UserManager;
 
 import javax.swing.event.ChangeEvent;
 import java.awt.event.ItemEvent;
@@ -180,8 +181,8 @@ public class VentanaLogin {
 		public void actionPerformed(ActionEvent e) {
 			boolean log = false;
 			try {
-				GestorLogin gestorLogin = new GestorLogin();
-				log = gestorLogin.login(tfUsuario.getText().toString(), pwdfPassword.getText().toString());
+				UserManager userManager = new UserManager();
+				log = userManager.login(tfUsuario.getText().toString(), pwdfPassword.getText().toString());
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
