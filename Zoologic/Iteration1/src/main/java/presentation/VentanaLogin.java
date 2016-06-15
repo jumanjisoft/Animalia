@@ -22,8 +22,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.event.ChangeListener;
 
-import domain.Client;
-import domain.UserManager;
+import Domain.Client;
+import Domain.UserManager;
 
 import javax.swing.event.ChangeEvent;
 import java.awt.event.ItemEvent;
@@ -72,7 +72,7 @@ public class VentanaLogin {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setIconImage(
-				Toolkit.getDefaultToolkit().getImage(VentanaLogin.class.getResource("/org/Interface/111.png")));
+				Toolkit.getDefaultToolkit().getImage(VentanaLogin.class.getResource("/presentation/111.png")));
 		frame.setBounds(100, 100, 441, 275);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -85,7 +85,7 @@ public class VentanaLogin {
 			{
 				lblLogo = new JLabel("");
 				lblLogo.addMouseListener(new LblLogoMouseListener());
-				lblLogo.setIcon(new ImageIcon(VentanaLogin.class.getResource("/org/Interface/012.png")));
+				lblLogo.setIcon(new ImageIcon(VentanaLogin.class.getResource("/presentation/012.png")));
 				lblLogo.setBounds(10, 11, 100, 112);
 				panel.add(lblLogo);
 			}
@@ -146,8 +146,8 @@ public class VentanaLogin {
 	}
 
 	private class LblLogoMouseListener extends MouseAdapter {
-		ImageIcon imagenOriginal = new ImageIcon(VentanaLogin.class.getResource("/org/Interface/012.png"));
-		ImageIcon imagenCambio = new ImageIcon(VentanaLogin.class.getResource("/org/Interface/112.png"));
+		ImageIcon imagenOriginal = new ImageIcon(VentanaLogin.class.getResource("/presentation/012.png"));
+		ImageIcon imagenCambio = new ImageIcon(VentanaLogin.class.getResource("/presentation/112.png"));
 
 		public void mouseEntered(MouseEvent e) {
 			lblEstado.setText("Evento de Ratón: mouseEntered" + e.getSource().getClass());

@@ -6,7 +6,7 @@ import java.util.Vector;
 
 import org.hsqldb.ClientConnection;
 
-import domain.Client;
+import Domain.Client;
 
 public class DAOClient {
 	private DBAgent dbAgent;
